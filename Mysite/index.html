@@ -1,0 +1,60 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>
+*{
+padding:0px;
+margin:0;
+}
+
+.bt{
+width:80px;
+height:40px;
+background-color:green;
+text-align:center;
+padding:0.5em 0.5em;
+border: none;
+border-radius:5px;
+}
+</style>
+
+<script>
+setInterval("timer.innerHTML=new Date()"); 
+function myFunctiona() {
+    document.getElementById("demoa").style.display='none';
+}
+
+function checkLogon(){
+    var name = document.getElementById("username").value;
+    var passwd = document.getElementById("password").value;
+    if((name==null || name=="") || (passwd==null || passwd=="")){
+        alert("用户名或密码不能为空！！");
+    }
+    else{
+        if(name=="123" && passwd=="123"){
+            alert("登录成功！");
+            window.location.href="mainsite.html";
+        }
+        else{
+            alert("用户名或密码错误！！");
+        }
+    }
+}
+</script>
+
+
+</head>
+
+<body>
+<div id="timer"></div>
+<h1>你好，请输入账号密码<h1/>
+<p>User_name:</p><br />
+<input type="text" name="userNm" id="username" />
+<br /><br />
+<p>Password:</p><br />
+<input type="text" name="passWd" id="password" />
+<br /><br />
+<input type="submit" name="Submit" value="Sign in" class="bt" style="color:white" onClick="checkLogon()" />
+</body>
+</html>

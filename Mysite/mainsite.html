@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css样式.css">
+<meta charset="UTF-8">
+
+<script language="Javascript" type="text/javascript"> 
+setInterval("timer.innerHTML=new Date()"); 
+function myFunctiona() {
+    document.getElementById("demoa").style.display='none';
+}
+function myFunctionb() {
+    document.getElementById("demob").style.display='none';
+}
+function myFunctionc() {
+    document.getElementById("democ").style.display='none';
+}
+
+function myFcta() {
+    document.getElementById("demo").innerHTML="Welcome to Windows Phone.";
+}
+function myFctb() {
+    document.getElementById("demo").innerHTML="Welcome to Windows IOS.";
+}
+function myFctc() {
+    document.getElementById("demo").innerHTML="Welcome to Windows Android.";
+}
+function tenpct(){
+    var pgbar=document.getElementById("progress");
+    pgbar.style.width=10 + "%";
+}
+function thirtypct(){
+    var pgbar=document.getElementById("progress");
+    pgbar.style.width=30 + "%";
+}
+function fiftypct(){
+    var pgbar=document.getElementById("progress");
+    pgbar.style.width=50 + "%";
+}
+function seventypct(){
+    var pgbar=document.getElementById("progress");
+    pgbar.style.width=70 + "%";
+}
+function ninetypct(){
+    var pgbar=document.getElementById("progress");
+    pgbar.style.width=90 + "%";
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="bgca">
+<button type="button" class="btna" onclick="myFunctiona()">菜单1</button>
+<button type="button" class="btnb" onclick="myFunctionb()">菜单2</button>
+<button type="button" class="btnc" onclick="myFunctionc()">菜单3</button>
+</div>
+
+
+
+<div id="timer"></div>
+
+<form action="https://cn.bing.com/search">
+<input type="text" id="searchbox" name="q">
+<input id="search" type="submit" value="Search">
+</form>
+
+</div>
+
+<div>
+<p class="line"></p>
+</div>
+<div id="demoa" class="boxa">
+
+<button type="button" class="one" onclick="myFcta()">Windows Phone</button>
+<button type="button" class="one" onclick="myFctb()">IOS</button>
+<button type="button" class="one" onclick="myFctc()">Android</button>
+
+</div>
+
+<div>
+<p id="demo"></p>
+</div>
+
+
+<div>
+<p class="line"></p>
+</div>
+
+<div id="demob">
+
+<div style="position:relative;width:500px">
+<div id="pgcontainer">
+<div id="progress" style="width:0%"></div>
+</div>
+</div>
+
+<div class="demob">
+<button type="button" class="two" onclick="tenpct()">10</button>
+<button type="button" class="two" onclick="thirtypct()">30</button>
+<button type="button" class="two" onclick="fiftypct()">50</button>
+<button type="button" class="two" onclick="seventypct()">70</button>
+<button type="button" class="two" onclick="ninetypct()">90</button>
+</div>
+
+</div>
+
+<div>
+<p class="line"></p>
+<div/>
+
+<div id="democ">
+<div class="bgone">
+<p class="txa">jjn</p><p class="txb">2</p>
+</div>
+<div class="bgtwo">
+<p class="txc">666</p><p class="txd">6</p>
+</div>
+</div>
+
+</body>
+</html>
