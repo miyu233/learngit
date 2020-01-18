@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>newpage</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+<style type="text/css">
+    #box{
+        width:900px;
+        margin: 30px auto;
+        font-family: 'Microsoft YaHei';
+        font-size: 14px;
+    }
+    input{
+        width: 780px;
+        border: 1px solid #e2e2e2;
+        height: 30px;
+        float: left;
+        background-image: url(images/search.jpg);
+        background-repeat: no-repeat;
+        background-size: 25px;
+        background-position:5px center;
+        padding:0 0 0 40px;
+    }
+    #search{
+        width: 78px;
+        height: 32px;
+        float: right;
+        background: rgba(230, 225, 225, 0.726);
+        color: rgb(14, 1, 1);
+        text-align: center;
+        line-height: 32px;
+        cursor: pointer;
+    }
+ 
+</style>
+</head>
+<body>
+    <div id="datetime">
+        <script>
+            setInterval("document.getElementById('datetime').innerHTML=new Date();", 1000);
+        </script>
+    </div>
+</body>
+<body>
+    <div id="box">
+        <input type="text" name="search" placeholder="请输入关键字">
+        <div id="search">search</div>  
+    </div>
+</body>
+<body>
+   <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="windows Phone-tab" data-toggle="tab" href="#Windows Phone" role="tab" aria-controls="Windows Phone" aria-selected="true">Windows Phone</a>
+        </li>
+        <li class="nav-item">     
+            <a class="nav-link " id="IOS-tab" data-toggle="tab" href="#IOS" role="tab" aria-controls="IOS" aria-selected="true">IOS</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link " id="Andriod-tab" data-toggle="tab" href="#Andriod" role="tab" aria-controls="Andriod" aria-selected="true">Andriod</a>
+        </li>
+    </ul>
+    <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-Windows Phone" role="tabpanel" aria-labelledby="nav-Windows Phone-tab">Welcome to Windows Phone</div>
+        <div class="tab-pane fade " id="nav-IOS" role="tabpanel" aria-labelledby="nav-IOS-tab">Welcome to IOS</div>
+        <div class="tab-pane fade" id="nav-Andriod" role="tabpanel" aria-labelledby="nav-Andriod-tab">Welcome to Andriod</div>
+    </div>
+</body>
+</html>
