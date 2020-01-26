@@ -1,0 +1,17 @@
+<form bindsubmit="formBindsubmit" bindreset="formReset">
+  <view style="display:flex;"class='container'>
+    <label>请输入姓名：</label>
+    <input name="userName" placeholder="请输入姓名！" />
+  </view>
+  <view style="display:flex;"class='container'>
+    <label>请输入手机号：</label>
+    <input name="psw" placeholder="请输入手机号！" password="true" />
+  </view>
+  <view style="display:flex;margin-top:30px;">
+    <button style="width:30%;" formType="submit" >确认</button>
+  </view>
+  <view style="display:flex;margin-top:30px;">
+    <button style="width:40%" bindtap="goToTalkPage" >Nevigate</button>
+  </view>
+</form>
+<view>{{tip}}</view>
